@@ -66,7 +66,7 @@ func WhoHas(ip net.IP) []byte {
 }
 
 func IsAt(src Address, target Address) []byte {
-	log.Warning("Tell " + target.IP.String() + " ? " + src.IP.String() + " is at " + src.HardwareAddr.String())
+	//log.Warning("Tell " + target.IP.String() + " ? " + src.IP.String() + " is at " + src.HardwareAddr.String())
 	eth := layers.Ethernet{
 		EthernetType: layers.EthernetTypeARP,
 		SrcMAC:       src.HardwareAddr,
