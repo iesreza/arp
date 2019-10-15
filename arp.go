@@ -6,7 +6,6 @@ import (
 	"github.com/google/gopacket/layers"
 	"github.com/google/gopacket/pcap"
 	"github.com/iesreza/netconfig"
-	"gutil/log"
 	"net"
 )
 
@@ -125,4 +124,5 @@ func Listen(source *pcap.Handle, onReply func(srcAddress Address, replyTo Addres
 			}
 		}
 	}
+
 }
